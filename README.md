@@ -1,4 +1,4 @@
-# Static outbound IP for AWS Lambda
+# Static outbound IP for AWS Lambda 
 A [serverless](http://serverless.com/) template project of AWS lambda function with static outbound IP.
 
 This project will create a VPC with private subnets and NAT gateway which binded with Elastic IP in public subnet.
@@ -13,6 +13,11 @@ yarn / npm install
 sls deploy
 # curl output endpoint, e.g. curl https://XXXXX.execute-api.us-east-1.amazonaws.com/dev/
 > {"src_ip":"xx.xx.xx.xx"}
+```
+
+## Run it locally
+```
+node index.js
 ```
 
 ## Cleanup
